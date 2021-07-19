@@ -72,6 +72,7 @@ app.post('/order-legacy', (req, res) => {
 
 app.get("/order/:id", (req, res) => {
     let orderId = req.params.id;
+    
     if (!orderId) {
         res.sendStatus(400);
         return;
